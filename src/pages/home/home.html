@@ -15,8 +15,19 @@
   </p>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content> -->
+</ion-contenimport { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  constructor(public navCtrl: NavController) {
+  }
+}
+t> -->
 
 <ion-header>
   <ion-navbar>
@@ -28,45 +39,57 @@
 </ion-header>
 
 <ion-content class="card-background-page">
-  <ion-card >
-    <button>
+  <!-- Card de Carnaval -->
+  <ion-card>
+    <button (click)="goToCarnavalPage()">
       <img src="assets/imgs/carnaval.jpg"/>
+      <div class="card-subtitle">Carnaval</div>
     </button>
-    <div class="card-subtitle">Carnaval</div>
   </ion-card>
+  <img class="barra" src="assets/imgs/barra1.jpg">
 
-  <ion-card>
-    <button>
+  <!-- Card de Gastronomia -->
+  <ion-card class="ion-card-image">
+    <button (click)="goToGastronomiaPage()">
       <img src="assets/imgs/gastronomia.jpg"/>
+      <div class="card-subtitle">Gastronomia</div>
     </button>
-    <div class="card-subtitle">Gastronomia</div>
   </ion-card>
+  <img src="assets/imgs/barra2.jpg">
 
+  <!-- Card de Hospedagem -->
   <ion-card>
-    <button>
+    <button (click)="goToHospedagemPage()">
       <img src="assets/imgs/hospedagem.png"/>
+      <div class="card-subtitle">Hospedagem</div>
     </button>
-    <div class="card-subtitle">Hospedagem</div>
   </ion-card>
+  <img class="barra" src="assets/imgs/barra3.jpg">
 
+  <!-- Card de Igreja -->
   <ion-card>
-    <button>
+    <button (click)="goToIgrejasPage()">
         <img src="assets/imgs/igrejas.jpg"/>
     </button>
-    <div class="card-subtitle">Igreja</div>
+    <div class="card-subtitle">Igrejas</div>
   </ion-card>
+  <img src="assets/imgs/barra4.jpg">
 
+  <!-- Card de Monumentos -->
   <ion-card>
-    <button>
+    <button (click)="goToMonumentosPage()">
       <img src="assets/imgs/monumentos.jpg"/>
     </button>
     <div class="card-subtitle">Monumentos</div>
   </ion-card>
+  <img src="assets/imgs/barra5.jpg">
 
+  <!-- Card de Eventos -->
   <ion-card>
-    <button>
+    <button (click)="goToEventosPage()">
       <img src="assets/imgs/eventos.jpg"/>
     </button>
     <div class="card-subtitle">Eventos</div>
   </ion-card>
+
 </ion-content>

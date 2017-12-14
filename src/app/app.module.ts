@@ -5,6 +5,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { CarnavalPage } from '../pages/carnaval/carnaval';
+import { EventosPage } from '../pages/eventos/eventos';
+import { GastronomiaPage } from '../pages/gastronomia/gastronomia';
+import { HospedagemPage } from '../pages/hospedagem/hospedagem';
+import { IgrejasPage } from '../pages/igrejas/igrejas';
+import { MonumentosPage } from '../pages/monumentos/monumentos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +19,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    CarnavalPage,
+    EventosPage,
+    GastronomiaPage,
+    HospedagemPage,
+    IgrejasPage,
+    MonumentosPage,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +35,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    CarnavalPage,
+    EventosPage,
+    GastronomiaPage,
+    HospedagemPage,
+    IgrejasPage,
+    MonumentosPage,
   ],
   providers: [
     StatusBar,
