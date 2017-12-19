@@ -10,11 +10,12 @@ import { EventosPage } from '../pages/eventos/eventos';
 import { GastronomiaPage } from '../pages/gastronomia/gastronomia';
 import { HospedagemPage } from '../pages/hospedagem/hospedagem';
 import { IgrejasPage } from '../pages/igrejas/igrejas';
+import { IgrejasDetailPage } from '../pages/igrejas-detail/igrejas-detail';
 import { MonumentosPage } from '../pages/monumentos/monumentos';
 
 @Component({
   templateUrl: 'app.html'
-  
+
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -34,6 +35,7 @@ export class MyApp {
       { title: 'gastronomia', component: GastronomiaPage},
       { title: 'hospedagem', component: HospedagemPage},
       { title: 'igrejas', component: IgrejasPage},
+      { title: 'IgrejasDetail', component: IgrejasDetailPage},
       { title: 'monumentos', component: MonumentosPage},
       { title: 'eventos', component: EventosPage}
     ];

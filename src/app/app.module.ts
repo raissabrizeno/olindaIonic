@@ -10,6 +10,7 @@ import { EventosPage } from '../pages/eventos/eventos';
 import { GastronomiaPage } from '../pages/gastronomia/gastronomia';
 import { HospedagemPage } from '../pages/hospedagem/hospedagem';
 import { IgrejasPage } from '../pages/igrejas/igrejas';
+import { IgrejasDetailPage } from '../pages/igrejas-detail/igrejas-detail';
 import { MonumentosPage } from '../pages/monumentos/monumentos';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -25,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GastronomiaPage,
     HospedagemPage,
     IgrejasPage,
-    MonumentosPage,
+    IgrejasDetailPage,
+    MonumentosPage
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GastronomiaPage,
     HospedagemPage,
     IgrejasPage,
+    IgrejasDetailPage,
     MonumentosPage,
   ],
   providers: [
