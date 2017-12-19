@@ -1,11 +1,10 @@
 page-eventos {
 
   .box{
-    position: relative;
-    background-color: #FD6003;
-    color: #FFFEFF;
     width: 100%;
-    height: auto;
+    height: 150px;
+    position: relative;
+    margin: 0%;
   }
   .card-background-page {
 
@@ -22,12 +21,16 @@ page-eventos {
     .title {
       font-weight: bold;
       position: relative;
+      white-space: normal;
+      padding: 3px;
       color: #FFFEFF;
       text-align: left;
       font-size: 1em;
     }
     .subtitle {
       position: relative;
+      white-space: normal;
+      padding: 3px;
       color: #FFFEFF;
       text-align: left;
       font-size: 1em;
