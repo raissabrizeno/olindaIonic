@@ -5,14 +5,20 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>Gastronomia</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content class="card-background-page">
+<ion-card>
+  <button  (click)="goToIgrejasDetailPage()" class="background-color-btn" type="button" name="btnIgreja">
+    <img src="assets/imgs/restaurante-exemplo.jpg"/>
+    <ion-card-content>
+      <ion-card-title class="title">NOME DO RESTAURANTE</ion-card-title>
+      <ion-card-title class="subtitle">TELEFONE</ion-card-title>
+      <ion-card-title class="subtitle"> ENDEREÇO</ion-card-title>
+    </ion-card-content>
+  </button>
+</ion-card>
 </ion-content>
