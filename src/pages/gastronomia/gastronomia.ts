@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GastronomiaDetailPage } from '../gastronomia-detail/gastronomia-detail';
 
 /**
  * Generated class for the GastronomiaPage page.
@@ -8,7 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+// @IonicPage()
 @Component({
   selector: 'page-gastronomia',
   templateUrl: 'gastronomia.html',
@@ -17,9 +18,11 @@ export class GastronomiaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GastronomiaPage');
+  //
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad GastronomiaPage');
+  // }
+  goToGastronomiaDetailPage(){
+    this.navCtrl.push(GastronomiaDetailPage);
   }
-
 }
