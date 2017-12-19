@@ -1,11 +1,22 @@
 page-igrejas {
 
+  .box{
+    position: relative;
+    background-color: #FD6003;
+    color: #FFFEFF;
+    width: 100%;
+    height: auto;
+  }
   .card-background-page {
+
+    .background-color-btn {
+      background-color: #FD6003;
+    }
+
     .ion-card {
         width: 98%;
         height: auto;
         position:relative;
-        background-color: #FD6003;
         text-align: left;
     }
     .title {
@@ -21,13 +32,5 @@ page-igrejas {
       text-align: left;
       font-size: 1em;
     }
-    // .card-subtitle {
-    //   font-size: 0.8em;
-    //   position: absolute;
-    //   top: 65%;
-    //   width: 65%;
-    //   color: #FFFEFF;
-    //   text-align: left;
-    // }
   }
 }

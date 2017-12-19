@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ListPage} from '../list/list';
-
+import { HeaderColor } from '@ionic-native/header-color';
 import { CarnavalPage } from '../carnaval/carnaval';
 import { EventosPage } from '../eventos/eventos';
 import { GastronomiaPage } from '../gastronomia/gastronomia';
@@ -14,7 +14,12 @@ import { MonumentosPage } from '../monumentos/monumentos';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private headerColor: HeaderColor) {
+
+  }
+
+  setColorOne(){
+    this.headerColor.tint('#fd6003');
   }
 
   goToCarnavalPage(){
