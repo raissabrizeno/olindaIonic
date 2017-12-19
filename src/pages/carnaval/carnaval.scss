@@ -1,3 +1,36 @@
 page-carnaval {
 
+  .box{
+    position: relative;
+    background-color: #FD6003;
+    color: #FFFEFF;
+    width: 100%;
+    height: auto;
+  }
+  .card-background-page {
+
+    .background-color-btn {
+      background-color: #FD6003;
+    }
+
+    .ion-card {
+        width: 98%;
+        height: auto;
+        position:relative;
+        text-align: left;
+    }
+    .title {
+      font-weight: bold;
+      position: relative;
+      color: #FFFEFF;
+      text-align: left;
+      font-size: 1em;
+    }
+    .subtitle {
+      position: relative;
+      color: #FFFEFF;
+      text-align: left;
+      font-size: 1em;
+    }
+  }
 }
