@@ -8,6 +8,7 @@ import { GastronomiaPage } from '../gastronomia/gastronomia';
 import { HospedagemPage } from '../hospedagem/hospedagem';
 import { IgrejasPage } from '../igrejas/igrejas';
 import { MonumentosPage } from '../monumentos/monumentos';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
