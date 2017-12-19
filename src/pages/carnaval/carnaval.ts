@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { CarnavalDetailPage } from '../carnaval-detail/carnaval-detail';
 /**
  * Generated class for the CarnavalPage page.
  *
@@ -8,7 +8,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+//@IonicPage()
 @Component({
   selector: 'page-carnaval',
   templateUrl: 'carnaval.html',
@@ -17,9 +17,11 @@ export class CarnavalPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CarnavalPage');
+  //
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad CarnavalPage');
+  // }
+  goToCarnavalDetailPage(){
+    this.navCtrl.push(CarnavalDetailPage);
   }
-
 }

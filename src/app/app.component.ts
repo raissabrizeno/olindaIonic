@@ -7,12 +7,17 @@ import { HeaderColor } from '@ionic-native/header-color'
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CarnavalPage } from '../pages/carnaval/carnaval';
+import { CarnavalDetailPage } from '../pages/carnaval-detail/carnaval-detail';
 import { EventosPage } from '../pages/eventos/eventos';
+import { EventosDetailPage } from '../pages/eventos-detail/eventos-detail';
 import { GastronomiaPage } from '../pages/gastronomia/gastronomia';
+import { GastronomiaDetailPage } from '../pages/gastronomia-detail/gastronomia-detail';
 import { HospedagemPage } from '../pages/hospedagem/hospedagem';
+import { HospedagemDetailPage } from '../pages/hospedagem-detail/hospedagem-detail';
 import { IgrejasPage } from '../pages/igrejas/igrejas';
 import { IgrejasDetailPage } from '../pages/igrejas-detail/igrejas-detail';
 import { MonumentosPage } from '../pages/monumentos/monumentos';
+import { MonumentosDetailPage } from '../pages/monumentos-detail/monumentos-detail';
 
 @Component({
   templateUrl: 'app.html'
@@ -34,12 +39,17 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'carnaval', component: CarnavalPage},
+      { title: 'CarnavalDetail', component: CarnavalDetailPage},
       { title: 'gastronomia', component: GastronomiaPage},
+      { title: 'GastronomiaDetail', component: GastronomiaDetailPage},
       { title: 'hospedagem', component: HospedagemPage},
+      { title: 'HospedagemDetail', component: HospedagemDetailPage},
       { title: 'igrejas', component: IgrejasPage},
       { title: 'IgrejasDetail', component: IgrejasDetailPage},
       { title: 'monumentos', component: MonumentosPage},
-      { title: 'eventos', component: EventosPage}
+      { title: 'MonumentosDetail', component: MonumentosDetailPage},
+      { title: 'eventos', component: EventosPage},
+      { title: 'EventosDetail', component: EventosDetailPage}
     ];
 
   }

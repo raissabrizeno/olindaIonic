@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MonumentosDetailPage } from '../monumentos-detail/monumentos-detail';
 
 /**
  * Generated class for the MonumentosPage page.
@@ -8,7 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+// @IonicPage()
 @Component({
   selector: 'page-monumentos',
   templateUrl: 'monumentos.html',
@@ -18,8 +19,10 @@ export class MonumentosPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MonumentosPage');
-  }
-
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad MonumentosPage');
+  // }
+goToMonumentosDetailPage(){
+  this.navCtrl.push(MonumentosDetailPage);
+}
 }

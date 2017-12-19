@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HospedagemDetailPage } from '../hospedagem-detail/hospedagem-detail';
 
 /**
  * Generated class for the HospedagemPage page.
@@ -8,7 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+// @IonicPage()
 @Component({
   selector: 'page-hospedagem',
   templateUrl: 'hospedagem.html',
@@ -17,9 +18,11 @@ export class HospedagemPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HospedagemPage');
+  //
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad HospedagemPage');
+  // }
+  goToHospedagemDetailPage(){
+    this.navCtrl.push(HospedagemDetailPage);
   }
-
 }
