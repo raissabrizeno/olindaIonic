@@ -38,15 +38,24 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  navBarColor: #FD6003,
+  navBarColorCarnaval:  #FD6003,
+  navBarColorHospedagem: #EE0C92,
+  navBarColorIgreja: #FD6003,
+  navBarColorGastronomia: #F7A60C,
+  navBarColorEventos:  #0FA4B8,
+  navBarColorMonumentos: #8CC31D
+
 );
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
+  $toolbar-ios-background: navBarColor;
+  $toolbar-md-background: navBarColor;
+  $toolbar-wp-background: navBarColor;
 
 
 // App Material Design Variables
