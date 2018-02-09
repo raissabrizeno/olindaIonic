@@ -12,15 +12,21 @@
 
 <ion-content class="card-background-page">
   <ion-card>
-    <button  (click)="goToGastronomiaDetailPage()" class="background-color-btn">
-      <ion-card class="box">
-        <img src="assets/imgs/restaurante-exemplo.jpg"/>
-      </ion-card>
-      <ion-card-content>
-        <ion-card-title class="title">NOME DO RESTAURANTE</ion-card-title>
-        <ion-card-title class="subtitle">TELEFONE</ion-card-title>
-        <ion-card-title class="subtitle"> ENDEREÇO</ion-card-title>
-      </ion-card-content>
-    </button>
+    <ion-list>
+      <ion-item-sliding *ngFor="let gastronomia of gastronomia | async">
+        <ion-item>
+          <button  (click)="goToGastronomiaDetailPage()" class="background-color-btn">
+            <ion-card class="box">
+              <img src="{{gastronomia.image}}"/>
+            </ion-card>
+            <ion-card-content>
+              <ion-card-title class="title">{{gastronomia.name}}</ion-card-title>
+              <ion-card-title class="subtitle">{{gastronomia.phone}}</ion-card-title>
+              <ion-card-title class="subtitle"> {{gastronomia.address}}</ion-card-title>
+            </ion-card-content>
+          </button>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
   </ion-card>
 </ion-content>

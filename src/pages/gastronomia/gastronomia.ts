@@ -1,6 +1,8 @@
+import {GastronomiaProvider } from './../../providers/gastronomia'
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { GastronomiaDetailPage } from '../gastronomia-detail/gastronomia-detail';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Generated class for the GastronomiaPage page.
@@ -16,7 +18,10 @@ import { GastronomiaDetailPage } from '../gastronomia-detail/gastronomia-detail'
 })
 export class GastronomiaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  gastronomia: Observable<any>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private provider: GastronomiaProvider) {
+    this.gastronomia = this.provider.getAll();
   }
   //
   // ionViewDidLoad() {
