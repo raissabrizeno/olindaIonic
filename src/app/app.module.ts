@@ -17,7 +17,9 @@
   import { IgrejasDetailPage } from '../pages/igrejas-detail/igrejas-detail';
   import { MonumentosPage } from '../pages/monumentos/monumentos';
   import { MonumentosDetailPage } from '../pages/monumentos-detail/monumentos-detail';
-  import { CarnavalProvider } from './../providers/carnaval'
+  import { CarnavalProvider } from './../providers/carnaval';
+  import { EventosProvider } from './../providers/eventos';
+
 
   import { StatusBar } from '@ionic-native/status-bar';
   import { SplashScreen } from '@ionic-native/splash-screen';
@@ -86,7 +88,8 @@
       GoogleMaps,
       {provide: ErrorHandler, useClass: IonicErrorHandler},
       HeaderColor,
-      CarnavalProvider
+      CarnavalProvider,
+      EventosProvider
     ]
   })
   export class AppModule {}
