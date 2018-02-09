@@ -1,6 +1,8 @@
+import { MonumentosProvider } from './../../providers/monumentos'
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { MonumentosDetailPage } from '../monumentos-detail/monumentos-detail';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Generated class for the MonumentosPage page.
@@ -16,7 +18,10 @@ import { MonumentosDetailPage } from '../monumentos-detail/monumentos-detail';
 })
 export class MonumentosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  monumentos: Observable<any>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private provider: MonumentosProvider) {
+    this.monumentos = this.provider.getAll();
   }
 
   // ionViewDidLoad() {

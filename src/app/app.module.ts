@@ -21,6 +21,7 @@
   import { CarnavalProvider } from './../providers/carnaval';
   import { EventosProvider } from './../providers/eventos';
   import { IgrejasProvider } from './../providers/igrejas';
+  import { MonumentosProvider } from './../providers/monumentos';
 
   import { StatusBar } from '@ionic-native/status-bar';
   import { SplashScreen } from '@ionic-native/splash-screen';
@@ -91,7 +92,8 @@
       HeaderColor,
       CarnavalProvider,
       EventosProvider,
-      IgrejasProvider
+      IgrejasProvider,
+      MonumentosProvider
     ]
   })
   export class AppModule {}
