@@ -12,15 +12,21 @@
 
 <ion-content class="card-background-page">
   <ion-card>
-    <button  (click)="goToHospedagemDetailPage()" class="background-color-btn">
-      <ion-card class="box">
-        <img src="assets/imgs/hospedagem-exemplo.jpg"/>
-      </ion-card>
-      <ion-card-content>
-        <ion-card-title class="title">NOME DA HOSPEDAGEM</ion-card-title>
-        <ion-card-title class="subtitle">TELEFONE</ion-card-title>
-        <ion-card-title class="subtitle"> ENDEREÇO</ion-card-title>
-      </ion-card-content>
-    </button>
+    <ion-list>
+      <ion-item-sliding *ngFor="let hospedagem of hospedagem | async">
+        <ion-item>
+          <button  (click)="goToHospedagemDetailPage()" class="background-color-btn">
+            <ion-card class="box">
+              <img src="{{hospedagem.image}}"/>
+            </ion-card>
+            <ion-card-content>
+              <ion-card-title class="title">{{hospedagem.name}}</ion-card-title>
+              <ion-card-title class="subtitle">{{hospedagem.phone}}</ion-card-title>
+              <ion-card-title class="subtitle"> {{hospedagem.address}}</ion-card-title>
+            </ion-card-content>
+          </button>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
   </ion-card>
 </ion-content>

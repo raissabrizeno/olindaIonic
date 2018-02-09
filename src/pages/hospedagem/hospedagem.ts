@@ -1,6 +1,8 @@
+import { HospedagemProvider } from './../../providers/hospedagem'
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HospedagemDetailPage } from '../hospedagem-detail/hospedagem-detail';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Generated class for the HospedagemPage page.
@@ -15,8 +17,9 @@ import { HospedagemDetailPage } from '../hospedagem-detail/hospedagem-detail';
   templateUrl: 'hospedagem.html',
 })
 export class HospedagemPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  hospedagem: Observable<any>;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private provider: HospedagemProvider) {
+    this.hospedagem = this.provider.getAll();
   }
   //
   // ionViewDidLoad() {

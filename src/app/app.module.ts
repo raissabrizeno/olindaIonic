@@ -23,6 +23,7 @@
   import { IgrejasProvider } from './../providers/igrejas';
   import { MonumentosProvider } from './../providers/monumentos';
   import { GastronomiaProvider } from './../providers/gastronomia';
+  import { HospedagemProvider } from './../providers/hospedagem';
 
   import { StatusBar } from '@ionic-native/status-bar';
   import { SplashScreen } from '@ionic-native/splash-screen';
@@ -95,7 +96,8 @@
       EventosProvider,
       IgrejasProvider,
       MonumentosProvider,
-      GastronomiaProvider
+      GastronomiaProvider,
+      HospedagemProvider
     ]
   })
   export class AppModule {}
