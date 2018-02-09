@@ -15,14 +15,15 @@
     <ion-list>
       <ion-item-sliding *ngFor="let eventos of eventos | async">
         <ion-item>
-          <button (click)="goToEventosDetailPage()" class="background-color-btn">
+        <button class="background-color-btn">
+        <!-- <button (click)="goToEventosDetailPage()" class="background-color-btn"> -->
             <ion-card class="box">
                 <img src="{{eventos.image}}">
             </ion-card>
             <ion-card-content>
               <ion-card-title class="title">{{eventos.name}}</ion-card-title>
-              <ion-card-title class="subtitle">{{eventos.date}}</ion-card-title>
-              <ion-card-title class="subtitle"> {{eventos.hours}}</ion-card-title>
+              <ion-card-title class="subtitle">Data: {{eventos.date}}</ion-card-title>
+              <ion-card-title class="subtitle"> Hora: {{eventos.hours}}</ion-card-title>
             </ion-card-content>
           </button>
         </ion-item>

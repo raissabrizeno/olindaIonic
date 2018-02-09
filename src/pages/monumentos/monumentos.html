@@ -15,14 +15,15 @@
     <ion-list>
       <ion-item-sliding *ngFor="let monumentos of monumentos | async">
         <ion-item>
-          <button  (click)="goToMonumentosDetailPage()" class="background-color-btn">
+          <!-- <button  (click)="goToMonumentosDetailPage()" class="background-color-btn"> -->
+          <button class="background-color-btn">
             <ion-card class="box">
               <img src="{{monumentos.image}}"/>
             </ion-card>
             <ion-card-content>
               <ion-card-title class="title">{{monumentos.name}}</ion-card-title>
-              <ion-card-title class="subtitle">{{monumentos.hour}}</ion-card-title>
-              <ion-card-title class="subtitle">{{monumentos.address}}</ion-card-title>
+              <ion-card-title class="subtitle">Funcionamento: {{monumentos.hour}}</ion-card-title>
+              <ion-card-title class="subtitle">Endereço: {{monumentos.address}}</ion-card-title>
             </ion-card-content>
           </button>
         </ion-item>

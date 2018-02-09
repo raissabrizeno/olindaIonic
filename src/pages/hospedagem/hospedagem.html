@@ -15,14 +15,15 @@
     <ion-list>
       <ion-item-sliding *ngFor="let hospedagem of hospedagem | async">
         <ion-item>
-          <button  (click)="goToHospedagemDetailPage()" class="background-color-btn">
+          <button class="background-color-btn">
+            <!-- <button  (click)="goToHospedagemDetailPage()" class="background-color-btn"> -->
             <ion-card class="box">
               <img src="{{hospedagem.image}}"/>
             </ion-card>
             <ion-card-content>
               <ion-card-title class="title">{{hospedagem.name}}</ion-card-title>
-              <ion-card-title class="subtitle">{{hospedagem.phone}}</ion-card-title>
-              <ion-card-title class="subtitle"> {{hospedagem.address}}</ion-card-title>
+              <ion-card-title class="subtitle">Telefone: {{hospedagem.phone}}</ion-card-title>
+              <ion-card-title class="subtitle">Endereço: {{hospedagem.address}}</ion-card-title>
             </ion-card-content>
           </button>
         </ion-item>
