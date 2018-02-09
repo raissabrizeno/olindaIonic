@@ -17,9 +17,10 @@
   import { IgrejasDetailPage } from '../pages/igrejas-detail/igrejas-detail';
   import { MonumentosPage } from '../pages/monumentos/monumentos';
   import { MonumentosDetailPage } from '../pages/monumentos-detail/monumentos-detail';
+
   import { CarnavalProvider } from './../providers/carnaval';
   import { EventosProvider } from './../providers/eventos';
-
+  import { IgrejasProvider } from './../providers/igrejas';
 
   import { StatusBar } from '@ionic-native/status-bar';
   import { SplashScreen } from '@ionic-native/splash-screen';
@@ -89,7 +90,8 @@
       {provide: ErrorHandler, useClass: IonicErrorHandler},
       HeaderColor,
       CarnavalProvider,
-      EventosProvider
+      EventosProvider,
+      IgrejasProvider
     ]
   })
   export class AppModule {}

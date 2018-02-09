@@ -14,16 +14,22 @@
 
 <ion-content class="card-background-page">
   <ion-card>
-    <button  (click)="goToIgrejasDetailPage()" class="background-color-btn">
-      <ion-card class="box">
-        <img src="assets/imgs/igreja-amparo.jpg"/>
-      </ion-card>
-      <ion-card-content>
-        <ion-card-title class="title">IGREJA DE NOSSA SENHORA DO AMPARO</ion-card-title>
-        <ion-card-title class="subtitle">(81) 3429-7339 / 3305-1045 </ion-card-title>
-        <ion-card-title class="subtitle"> R. Amparo  - Amparo, Olinda/PE</ion-card-title>
-      </ion-card-content>
-    </button>
+    <ion-list>
+      <ion-item-sliding *ngFor="let igrejas of igrejas | async">
+        <ion-item>
+          <button (click)="goToIgrejasDetailPage()" class="background-color-btn">
+            <ion-card class="box">
+              <img src="{{igrejas.image}}"/>
+            </ion-card>
+            <ion-card-content>
+              <ion-card-title class="title">{{igrejas.name}}</ion-card-title>
+              <ion-card-title class="subtitle">{{igrejas.phone}}</ion-card-title>
+              <ion-card-title class="subtitle"> {{igrejas.address}}</ion-card-title>
+            </ion-card-content>
+          </button>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
   </ion-card>
 
   <!-- <ion-card>
