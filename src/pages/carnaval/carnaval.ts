@@ -1,6 +1,8 @@
+import { CarnavalProvider } from './../../providers/carnaval'
 import { Component } from '@angular/core';
 import {NavController, NavParams } from 'ionic-angular';
 import { CarnavalDetailPage } from '../carnaval-detail/carnaval-detail';
+import { Observable } from 'rxjs/Observable';
 /**
  * Generated class for the CarnavalPage page.
  *
@@ -15,12 +17,12 @@ import { CarnavalDetailPage } from '../carnaval-detail/carnaval-detail';
 })
 export class CarnavalPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  carnaval: Observable<any>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private provider: CarnavalProvider) {
+    this.carnaval = this.provider.getAll();
   }
-  //
-  // ionViewDidLoad() {
-  //   console.log('ionViewDidLoad CarnavalPage');
-  // }
+
   goToCarnavalDetailPage(){
     this.navCtrl.push(CarnavalDetailPage);
   }

@@ -1,7 +1,7 @@
 page-carnaval {
 
   .box{
-    width: 100%;
+    width: relative;
     height: 150px;
     position: relative;
     margin: 0%;
@@ -13,10 +13,10 @@ page-carnaval {
     }
 
     .ion-card {
-        width: 98%;
-        height: auto;
-        position:relative;
-        text-align: left;
+      width: 98%;
+      height: auto;
+      position:relative;
+      text-align: left;
     }
     .title {
       font-weight: bold;
