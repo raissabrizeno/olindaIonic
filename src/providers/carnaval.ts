@@ -3,7 +3,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
 @Injectable()
 export class CarnavalProvider {
-  private PATH = 'carnaval/';
+  private PATH = 'Carnaval/';
   // private PATH = 'contacts/';
 
   constructor (private db: AngularFireDatabase){
@@ -17,7 +17,8 @@ export class CarnavalProvider {
          // key: c.payload.key,
          // ...c.payload.val()
          key: c.payload.key,
-         name: c.payload.child('0').val(),
+         image: c.payload.child('0').val(),
+         name: c.payload.child('1').val(),
          hours: c.payload.child('2').val(),
          aderess: c.payload.child('3').val(),
         }));
