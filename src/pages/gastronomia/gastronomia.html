@@ -15,8 +15,7 @@
     <ion-list>
       <ion-item-sliding *ngFor="let gastronomia of gastronomia | async">
         <ion-item>
-          <button class="box">
-          <!-- <button  (click)="goToGastronomiaDetailPage()" class="background-color-btn"> -->
+          <button  (click)="goToGastronomiaDetailPage()" class="box">
             <ion-card>
               <img src="{{gastronomia.image}}"/>
             </ion-card>
