@@ -11,13 +11,12 @@
 </ion-header>
 
 <ion-content class="card-background-page">
-  <ion-card>
+  <ion-card class="ion-card">
     <ion-list>
       <ion-item-sliding *ngFor="let eventos of eventos | async">
         <ion-item>
-        <button class="background-color-btn">
-        <!-- <button (click)="goToEventosDetailPage()" class="background-color-btn"> -->
-            <ion-card class="box">
+        <button (click)="goToEventosDetailPage()" class="box">
+            <ion-card>
                 <img src="{{eventos.image}}">
             </ion-card>
             <ion-card-content>

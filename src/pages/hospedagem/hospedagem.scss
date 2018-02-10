@@ -8,15 +8,13 @@ page-hospedagem {
   }
   .card-background-page {
 
-    .background-color-btn {
+    .box {
       background-color: #EE0C92;
-    }
-
-    .ion-card {
-        width: 98%;
-        height: auto;
-        position:relative;
-        text-align: left;
+      width: 100%;
+      height:auto;
+      position: relative;
+      margin-top: -1px !important;
+      margin-bottom: auto !important;
     }
     .title {
       font-weight: bold;

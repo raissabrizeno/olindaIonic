@@ -15,9 +15,8 @@
     <ion-list>
       <ion-item-sliding *ngFor="let monumentos of monumentos | async">
         <ion-item>
-          <!-- <button  (click)="goToMonumentosDetailPage()" class="background-color-btn"> -->
-          <button class="background-color-btn">
-            <ion-card class="box">
+          <button  (click)="goToMonumentosDetailPage()" class="box">
+            <ion-card >
               <img src="{{monumentos.image}}"/>
             </ion-card>
             <ion-card-content>
