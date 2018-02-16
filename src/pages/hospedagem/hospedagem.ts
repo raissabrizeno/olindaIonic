@@ -25,7 +25,7 @@ export class HospedagemPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad HospedagemPage');
   // }
-  goToHospedagemDetailPage(){
-    this.navCtrl.push(HospedagemDetailPage);
+  goToHospedagemDetailPage(hospedagem: any){
+    this.navCtrl.push(HospedagemDetailPage, {hospedagem: hospedagem});
   }
 }

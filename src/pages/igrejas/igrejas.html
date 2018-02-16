@@ -17,7 +17,7 @@
     <ion-list>
       <ion-item-sliding *ngFor="let igrejas of igrejas | async">
         <ion-item>
-          <button (click)="goToIgrejasDetailPage()" class="box">
+          <button (click)="goToIgrejasDetailPage(igrejas)" class="box">
             <ion-card>
               <img src="{{igrejas.image}}"/>
             </ion-card>

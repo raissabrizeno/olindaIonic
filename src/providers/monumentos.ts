@@ -25,15 +25,20 @@ export class MonumentosProvider {
     })
   }
 
- //  get(key: string) {
- //   return this.db.object(this.PATH + key)
- //   .snapshotChanges()
- //   .map(c => {
- //     return {
- //       key: c.key,
- //       ...c.payload.val()
- //     };
- //     });
- // }
+  get(key: string) {
+   return this.db.object(this.PATH + key)
+   .snapshotChanges()
+   .map(c => {
+     return {
+       // key: c.key,
+       // ...c.payload.val()
+       key: c.payload.key,
+       image: c.payload.child('0').val(),
+       name: c.payload.child('1').val(),
+       hour: c.payload.child('2').val(),
+       address: c.payload.child('3').val(),
+     };
+   });
+ }
 
 }

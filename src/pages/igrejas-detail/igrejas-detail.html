@@ -16,28 +16,24 @@
   <ion-grid>
     <ion-row>
       <ion-card class="image">
-        <img src="assets/imgs/igreja-amparo.jpg">
+        <img src="{{igrejas.image}}">
       </ion-card>
     </ion-row>
     <ion-row >
-      <ion-card class="name">Nome da Igreja</ion-card>
+      <ion-card class="name">{{igrejas.name}}</ion-card>
     </ion-row>
     <ion-row>
       <ion-item>
         <!-- <ion-icon></ion-icon> -->
-        <h3>Rua</h3>
+        <h3>Telefone: {{igrejas.phone}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Telefone</h3>
+        <h3>Funcionamento: {{igrejas.funcionamento}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Horário de Funcionamento</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3> Gratuito/Pago </h3>
+        <h3>Endereço: {{igrejas.address}}</h3>
       </ion-item>
 
       <ion-item>

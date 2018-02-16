@@ -16,28 +16,20 @@
   <ion-grid>
     <ion-row>
       <ion-card class="image">
-        <img src="assets/imgs/monumento-exemplo.jpg">
+        <img src="{{monumentos.image}}">
       </ion-card>
     </ion-row>
     <ion-row >
-      <ion-card class="name">Nome do Monumento</ion-card>
+      <ion-card class="name">{{monumentos.name}}</ion-card>
     </ion-row>
     <ion-row>
       <ion-item>
         <!-- <ion-icon></ion-icon> -->
-        <h3>Rua</h3>
+        <h3>Funcionamento: {{monumentos.hour}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Telefone</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3>Horário de Funcionamento</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3> Gratuito/Pago </h3>
+        <h3>Endereço: {{monumentos.address}} </h3>
       </ion-item>
 
       <ion-item>

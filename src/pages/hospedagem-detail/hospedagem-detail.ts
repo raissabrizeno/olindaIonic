@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'hospedagem-detail.html',
 })
 export class HospedagemDetailPage {
+  hospedagem: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.hospedagem = this.navParams.data.hospedagem || {};
   }
 
   ionViewDidLoad() {

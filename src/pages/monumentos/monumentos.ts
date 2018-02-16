@@ -27,7 +27,7 @@ export class MonumentosPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad MonumentosPage');
   // }
-goToMonumentosDetailPage(){
-  this.navCtrl.push(MonumentosDetailPage);
+goToMonumentosDetailPage(monumentos: any){
+  this.navCtrl.push(MonumentosDetailPage, {monumentos: monumentos});
 }
 }

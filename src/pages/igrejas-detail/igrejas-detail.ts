@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'igrejas-detail.html',
 })
 export class IgrejasDetailPage {
-
+  igrejas: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.igrejas = this.navParams.data.igrejas || {};
   }
 
   ionViewDidLoad() {

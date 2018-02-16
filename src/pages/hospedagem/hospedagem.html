@@ -15,7 +15,7 @@
     <ion-list>
       <ion-item-sliding *ngFor="let hospedagem of hospedagem | async">
         <ion-item>
-          <button  (click)="goToHospedagemDetailPage()" class="box">
+          <button  (click)="goToHospedagemDetailPage(hospedagem)" class="box">
             <ion-card>
               <img src="{{hospedagem.image}}"/>
             </ion-card>

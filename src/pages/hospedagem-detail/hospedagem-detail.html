@@ -16,28 +16,24 @@
   <ion-grid>
     <ion-row>
       <ion-card class="image">
-        <img src="assets/imgs/hospedagem-exemplo.jpg">
+        <img src="{{hospedagem.image}}">
       </ion-card>
     </ion-row>
     <ion-row >
-      <ion-card class="name">Nome da Pousada</ion-card>
+      <ion-card class="name">{{hospedagem.name}}</ion-card>
     </ion-row>
     <ion-row>
       <ion-item>
         <!-- <ion-icon></ion-icon> -->
-        <h3>Rua</h3>
+        <h3>Telefone: {{hospedagem.phone}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Telefone</h3>
+        <h3>Site: {{hospedagem.site}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Horário de Funcionamento</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3> Gratuito/Pago </h3>
+        <h3>Endereço: {{hospedagem.address}}</h3>
       </ion-item>
 
       <ion-item>

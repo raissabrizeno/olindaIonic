@@ -27,8 +27,8 @@ export class IgrejasPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad IgrejasPage');
   // }
-  goToIgrejasDetailPage(){
-    this.navCtrl.push(IgrejasDetailPage);
+  goToIgrejasDetailPage(igrejas: any){
+    this.navCtrl.push(IgrejasDetailPage, {igrejas: igrejas});
   }
 
 }

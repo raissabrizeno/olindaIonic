@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'monumentos-detail.html',
 })
 export class MonumentosDetailPage {
-
+  monumentos: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.monumentos = this.navParams.data.monumentos || {};
   }
 
   ionViewDidLoad() {
