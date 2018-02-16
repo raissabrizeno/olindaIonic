@@ -16,28 +16,25 @@
   <ion-grid>
     <ion-row>
       <ion-card class="image">
-        <img src="assets/imgs/gastronomia.jpg">
+        <img src="{{gastronomia.image}}">
       </ion-card>
     </ion-row>
     <ion-row >
-      <ion-card class="name">Nome do Restaurante</ion-card>
+      <ion-card class="name">{{gastronomia.name}}</ion-card>
     </ion-row>
     <ion-row>
+
+      <ion-item>
+        <h3>Telefone: {{gastronomia.phone}}</h3>
+      </ion-item>
+
+      <ion-item>
+        <h3>Funcionamento: {{gastronomia.hour}} </h3>
+      </ion-item>
+
       <ion-item>
         <!-- <ion-icon></ion-icon> -->
-        <h3>Rua</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3>Telefone</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3>Horário de Funcionamento</h3>
-      </ion-item>
-
-      <ion-item>
-        <h3> Gratuito/Pago </h3>
+        <h3>Local: {{gastronomia.address}}</h3>
       </ion-item>
 
       <ion-item>

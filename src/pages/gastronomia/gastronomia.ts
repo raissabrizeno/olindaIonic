@@ -27,7 +27,7 @@ export class GastronomiaPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad GastronomiaPage');
   // }
-  goToGastronomiaDetailPage(){
-    this.navCtrl.push(GastronomiaDetailPage);
+  goToGastronomiaDetailPage(gastronomia: any){
+    this.navCtrl.push(GastronomiaDetailPage, {gastronomia: gastronomia});
   }
 }

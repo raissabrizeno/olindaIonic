@@ -20,7 +20,7 @@ export class CarnavalProvider {
          image: c.payload.child('0').val(),
          name: c.payload.child('1').val(),
          hours: c.payload.child('2').val(),
-         aderess: c.payload.child('3').val(),
+         address: c.payload.child('3').val(),
         }));
     })
   }
@@ -28,7 +28,14 @@ export class CarnavalProvider {
   get(key: string) {
    return this.db.object(this.PATH + key).snapshotChanges()
      .map(c => {
-       return { key: c.key, ...c.payload.val() };
+       return {
+          // key: c.key, ...c.payload.val()
+          key: c.payload.key,
+          image: c.payload.child('0').val(),
+          name: c.payload.child('1').val(),
+          hours: c.payload.child('2').val(),
+          address: c.payload.child('3').val(),
+        };
      });
  }
 

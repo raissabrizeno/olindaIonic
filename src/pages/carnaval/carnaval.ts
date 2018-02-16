@@ -23,7 +23,7 @@ export class CarnavalPage {
     this.carnaval = this.provider.getAll();
   }
 
-  goToCarnavalDetailPage(){
-    this.navCtrl.push(CarnavalDetailPage);
+  goToCarnavalDetailPage(carnaval: any){
+    this.navCtrl.push(CarnavalDetailPage, {carnaval: carnaval});
   }
 }

@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'carnaval-detail.html',
 })
 export class CarnavalDetailPage {
-
+  carnaval: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.carnaval = this.navParams.data.carnaval || {};
   }
 
   ionViewDidLoad() {

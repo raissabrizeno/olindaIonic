@@ -15,14 +15,14 @@
   <ion-list>
     <ion-item-sliding *ngFor="let carnaval of carnaval | async">
       <ion-item>
-        <button (click)="goToCarnavalDetailPage()" class="box">
+        <button (click)="goToCarnavalDetailPage(carnaval)" class="box">
           <ion-card>
             <img src="{{carnaval.image}}"/>
           </ion-card>
           <ion-card-content>
             <ion-card-title class="title">{{ carnaval.name }}</ion-card-title>
             <ion-card-title class="subtitle">Hora: {{ carnaval.hours }}</ion-card-title>
-            <ion-card-title class="subtitle">Local: {{ carnaval.aderess }}</ion-card-title>
+            <ion-card-title class="subtitle">Local: {{ carnaval.address }}</ion-card-title>
           </ion-card-content>
         </button>
       </ion-item>

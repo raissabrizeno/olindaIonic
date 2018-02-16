@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'eventos-detail.html',
 })
 export class EventosDetailPage {
-
+  eventos: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.eventos = this.navParams.data.eventos || {};
   }
 
   ionViewDidLoad() {

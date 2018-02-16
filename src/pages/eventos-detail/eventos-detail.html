@@ -16,28 +16,32 @@
   <ion-grid>
     <ion-row>
       <ion-card class="image">
-        <img src="assets/imgs/eventos-exemplo.jpg">
+        <img src="{{eventos.image}}">
       </ion-card>
     </ion-row>
     <ion-row >
-      <ion-card class="name">Nome do Evento</ion-card>
+  <ion-card class="name">{{eventos.name}}</ion-card>
     </ion-row>
     <ion-row>
+      <!-- <ion-item> -->
+      <p margin="3px" align="center">{{eventos.details}}</p>
+      <!-- </ion-item> -->
+
       <ion-item>
-        <!-- <ion-icon></ion-icon> -->
-        <h3>Rua</h3>
+        <h3>Data: {{eventos.date}}</h3>
       </ion-item>
 
       <ion-item>
-        <h3>Telefone</h3>
+        <h3>Hora: {{eventos.hours}} </h3>
       </ion-item>
 
       <ion-item>
-        <h3>Horário de Funcionamento</h3>
+        <h3>Valor: {{eventos.price}} </h3>
       </ion-item>
 
       <ion-item>
-        <h3> Gratuito/Pago </h3>
+        <!-- <ion-icon name="locate"></ion-icon> -->
+        <h3>Local: {{eventos.local}}</h3>
       </ion-item>
 
       <ion-item>

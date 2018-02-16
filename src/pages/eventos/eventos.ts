@@ -27,7 +27,7 @@ export class EventosPage {
   // ionViewDidLoad() {
   //   console.log('ionViewDidLoad EventosPage');
   // }
-  goToEventosDetailPage(){
-    this.navCtrl.push(EventosDetailPage);
+  goToEventosDetailPage(eventos: any){
+    this.navCtrl.push(EventosDetailPage, {eventos: eventos});
   }
 }

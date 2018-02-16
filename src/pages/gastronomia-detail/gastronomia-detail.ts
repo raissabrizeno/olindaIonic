@@ -15,7 +15,8 @@ import { GoogleMaps, GoogleMap, GoogleMapsEvent, GoogleMapOptions, CameraPositio
 })
 export class GastronomiaDetailPage {
   map = GoogleMap;
-
+  gastronomia: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, private googleMaps: GoogleMaps, public platform: Platform) {
+    this.gastronomia = this.navParams.data.gastronomia || {};
   }
 }

@@ -15,7 +15,7 @@
     <ion-list>
       <ion-item-sliding *ngFor="let eventos of eventos | async">
         <ion-item>
-        <button (click)="goToEventosDetailPage()" class="box">
+        <button (click)="goToEventosDetailPage(eventos)" class="box">
             <ion-card>
                 <img src="{{eventos.image}}">
             </ion-card>
